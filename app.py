@@ -11,7 +11,6 @@ from PIL import Image
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from patchify import patchify, unpatchify
 
-from keras.utils import generic_utils
 from keras import backend as K
 from keras.models import load_model 
      
