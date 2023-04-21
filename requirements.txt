@@ -1,5 +1,6 @@
 segmentation-models==1.0.1
 tensorflow==2.9.0
+opencv-python
 keras
 patchify
 tqdm
