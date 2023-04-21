@@ -1,30 +1,13 @@
 # This was made by following this tutorial
 # https://www.youtube.com/watch?v=i40ulpcacFM
 
-!pip install -U -q segmentation-models
-# # Open the file in write mode
-# with open('/usr/local/lib/python3.9/dist-packages/efficientnet/keras.py', 'r') as f:
-#     # Read the contents of the file
-#     contents = f.read()
-
-# # Replace the string
-# new_contents = contents.replace('init_keras_custom_objects', 'init_tfkeras_custom_objects')
-
-# # Open the file in write mode again and write the modified contents
-# with open('/usr/local/lib/python3.9/dist-packages/efficientnet/keras.py', 'w') as f:
-#     f.write(new_contents)
-
-!pip install patchify
-!pip install gradio
-
 import os
 from os.path import join as pjoin
 import cv2
 import numpy as np
 from tqdm import tqdm
-from matplotlib import pyplot as plt
+
 from PIL import Image
-import seaborn as sns
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from patchify import patchify, unpatchify
 
@@ -32,7 +15,6 @@ from keras import backend as K
 from keras.models import load_model 
      
 import segmentation_models as sm
-
 
 import gradio as gr
      
