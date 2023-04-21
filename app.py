@@ -29,7 +29,7 @@ dice_loss = sm.losses.DiceLoss(class_weights=weights)
 focal_loss = sm.losses.CategoricalFocalLoss()
 total_loss = dice_loss + (1 * focal_loss)  
 
-model_path = 'models/satellite_segmentation_100-epochs.h5'
+model_path = 'model/satellite_segmentation_100-epochs.h5'
 saved_model = load_model(model_path,
                          custom_objects=({'dice_loss_plus_1focal_loss': total_loss, 
                                           'jaccard_coef': jaccard_coef}))
