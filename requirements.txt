@@ -1,0 +1,6 @@
+segmentation-models
+opencv-python
+tensorflow
+keras
+patchify
+tqdm
