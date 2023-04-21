@@ -1,7 +1,7 @@
 segmentation-models
 opencv-python
 tensorflow==2.2.1
-keras==2.5
+keras==2.5.0rc0
 patchify
 tqdm
 Pillow
