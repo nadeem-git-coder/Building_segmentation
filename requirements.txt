@@ -4,3 +4,6 @@ tensorflow
 keras
 patchify
 tqdm
+Pillow
+scikit-learn
+numpy
